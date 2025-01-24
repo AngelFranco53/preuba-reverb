@@ -23,7 +23,7 @@ class UpdateOrder implements ShouldBroadcastNow
     public function broadcastOn(): array
     {
         return [
-            new PrivateChannel('order'),
+            new Channel('order'),
         ];
     }
 }

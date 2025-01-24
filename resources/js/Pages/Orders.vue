@@ -67,7 +67,7 @@ onMounted(() => {
     });
     Echo.private('order')
         .listen('UpdateOrder', () => {
-            axios.get('/orders-get').then((response) => {
+            axios.get('/api/orders-get').then((response) => {
                 orderizer.value = response.data;
             });
         })
